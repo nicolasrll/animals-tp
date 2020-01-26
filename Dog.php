@@ -4,14 +4,17 @@ class Dog
 {
     private $name;
     private $race;
-    private$age;
+    private $age;
     private $weight;
     private const SPEEDING = 60;
 
-    function __construct()
+    public function __construct($name = '', $race = '', $age = 0, $weight = 15)
     {
         echo 'Vous avez adoptez un nouveau '.strtolower(get_class()).'<br>';
-        $this->setWeight(15);
+        $this->name = $name;
+        $this->race = $race;
+        $this->$age = $age;
+        $this->weight = $weight;
     }
 
     public function getName()
@@ -51,17 +54,17 @@ class Dog
 
     public function setWeight($weight)
     {
-        $this->weight += $weight;
+        $this->weight = $weight;
     }
 
     public function eating($quantity)
     {
-        $this->setWeight($quantity);
+        $newWeight += $this->getWeight() + $quantity;
+        $this->setWeight($newWeight);
     }
 
     public function running()
     {
         return 'Le chien court à une vitesse de '.self::SPEEDING.'km/h';
     }
-
 }

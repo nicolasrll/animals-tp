@@ -4,11 +4,11 @@ class Cat
 {
     private $name;
     private $race;
-    private$age;
+    private $age;
     private $weight;
     private const SPEEDING = 40;
 
-    function __construct()
+    public function __construct()
     {
         echo 'Vous avez adoptez un nouveau '.strtolower(get_class()).'<br>';
         $this->setWeight(4);
@@ -51,12 +51,13 @@ class Cat
 
     public function setWeight($weight)
     {
-        $this->weight += $weight;
+        $this->weight = $weight;
     }
 
     public function eating($quantity)
     {
-        $this->setWeight($quantity);
+        $newWeight += $this->getWeight() + $quantity;
+        $this->setWeight($newWeight);
     }
 
     public function running()

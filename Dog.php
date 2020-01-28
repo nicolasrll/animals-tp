@@ -1,4 +1,5 @@
 <?php
+
 class Dog
 {
     private $name;
@@ -7,13 +8,14 @@ class Dog
     private $weight;
     private const SPEEDING = 60;
 
-    public function __construct($name='', $race='', $age , $weight = 15)
+    public function __construct(string $name='',string $race='',int $age ,int $weight=15)
     {
-        $this->name = $name;
-        $this->race = $race;
-        $this->age = $age;
-        $this->weight = $weight;
-        echo 'Vous avez adoptez un nouveau '.strtolower(get_class()).'.<br>'; //Il s\'appelle '.$this->name.' et pèse '.$this->weight.'kgs. Il s\'agit d\'un '.$this->race.'. Il est agé de '.$this->age.'<br>';
+        $this->setName($name);
+        $this->setRace($race);
+        $this->setAge($age);
+        $this->setWeight($weight);
+
+        echo 'Vous avez adoptez un nouveau '.strtolower(get_class()).'.<br>';
     }
 
     public function getName()
@@ -56,10 +58,9 @@ class Dog
         $this->weight = $weight;
     }
 
-    public function eating(int $quantity)
+    public function eating(int $eatAdded)
     {
-        $newWeight = $this->getWeight() + $quantity;
-        $this->setWeight($newWeight);
+        $this->setWeight($this->getWeight() + $eatAdded);
     }
 
     public function running()

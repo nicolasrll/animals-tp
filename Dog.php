@@ -15,7 +15,7 @@ class Dog
         $this->setAge($age);
         $this->setWeight($weight);
 
-        echo 'Vous avez adoptez un nouveau '.strtolower(get_class()).'.<br>';
+        echo 'Vous avez adoptez un nouveau ' . strtolower(get_class()) . '.<br>';
     }
 
     public function getName()

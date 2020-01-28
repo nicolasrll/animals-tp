@@ -15,7 +15,7 @@ class Cat
         $this->setAge($age);
         $this->setWeight($weight);
 
-        echo 'Vous avez adoptez un nouveau '.strtolower(get_class()).'.<br>';
+        echo 'Vous avez adoptez un nouveau ' . strtolower(get_class()) . '.<br>';
     }
 
     public function getName()
@@ -65,6 +65,6 @@ class Cat
 
     public function running()
     {
-        return 'Le chat court à une vitesse de '.self::SPEEDING.'km/h';
+        return 'Le chat court à une vitesse de ' . self::SPEEDING . 'km/h';
     }
 }

@@ -26,3 +26,9 @@ echo 'Le chien s\'appelle ' . $toto->getName() . '. Il pèse ' . $toto->getWeigh
 
 $titi = new Dog ('titi','', 2, 3);
 echo 'Le chien s\'appelle ' . $titi->getName() . '. Il pèse ' . $titi->getWeight() . 'kgs. Il s\'agit d\'un ' . $titi->getRace() . '. Il est agé de ' . $titi->getAge() . 'ans<br>';
+
+$tata = new Dog ('tata','berger allemand');
+echo 'Le chien s\'appelle ' . $tata->getName() . '. Il pèse ' . $tata->getWeight() . 'kgs. Il s\'agit d\'un ' . $tata->getRace() . '. Il est agé de ' . $tata->getAge() . 'ans<br>';
+
+$ghost = new Dog();
+$invisible = new Cat();

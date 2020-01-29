@@ -8,7 +8,7 @@ class Cat
     private $weight;
     private const SPEEDING = 40;
 
-    public function __construct(string $name, string $race, int $age, int $weight=4)
+    public function __construct(string $name='',string $race='',int $age=0,int $weight=4)
     {
         $this->setName($name);
         $this->setRace($race);

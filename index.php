@@ -19,3 +19,10 @@ echo $beethoven->running() . '<br>';
 
 $idefix = new Dog('idefix', 'westie', 2);
 echo 'Le chien s\'appelle ' . $idefix->getName() . '. Il pèse ' . $idefix->getWeight() . 'kgs. Il s\'agit d\'un ' . $idefix->getRace() . '. Il est agé de ' . $idefix->getAge() . 'ans<br>';
+
+
+$toto = new Dog ('toto','caniche', 0);
+echo 'Le chien s\'appelle ' . $toto->getName() . '. Il pèse ' . $toto->getWeight() . 'kgs. Il s\'agit d\'un ' . $toto->getRace() . '. Il est agé de ' . $toto->getAge() . 'ans<br>';
+
+$titi = new Dog ('titi','', 2, 3);
+echo 'Le chien s\'appelle ' . $titi->getName() . '. Il pèse ' . $titi->getWeight() . 'kgs. Il s\'agit d\'un ' . $titi->getRace() . '. Il est agé de ' . $titi->getAge() . 'ans<br>';

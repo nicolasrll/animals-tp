@@ -4,7 +4,7 @@ class Cat
 {
     private $name = 'indéfinie';
     private $race = 'indéfinie';
-    private $age = 1; // 0 egal age not uninformed or age < 1 like baby
+    private $age = 0; // 0 egal age not uninformed or age < 1 like baby
     private $weight = 4;
     private const SPEEDING = 40;
 

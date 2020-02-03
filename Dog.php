@@ -65,7 +65,7 @@ class Dog
 
     public function introduce()
     {
-         $introduce = 'Le prénom du chien est ' . $this->getName() . '. Son poids est ' . $this->getWeight() . 'kgs. Sa race est ' . $this->getRace() . '. Il est agé de ' . $this->getAge() . ' ans.<br>';
+        $introduce = 'Le prénom du chien est ' . $this->getName() . '. Son poids est ' . $this->getWeight() . 'kgs. Sa race est ' . $this->getRace() . '. Il est agé de ' . $this->getAge() . ' ans.<br>';
         if ($this->age === 0) {
             $introduce = $introduce .' L\'age avec la valeur 0 signifie que l\'animal à moins de un an ou que cette information n\'a pas encore été renseigné.<br>';
         }

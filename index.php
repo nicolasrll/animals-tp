@@ -64,4 +64,3 @@ echo $ghost->introduce();
 // Create without parameters passed
 $invisible = new Cat();
 echo $invisible->introduce();
-

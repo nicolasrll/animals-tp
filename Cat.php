@@ -8,7 +8,7 @@ class Cat extends Animal
     public function __construct()
     {
         parent::__construct();
-        echo 'Il s\'agit d\'un ' . strtolower(get_class()) . '.<br>';
+        echo 'Les chats ont 9 vies.<br>';
     }
 
     public function getWeight(): ?int

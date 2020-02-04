@@ -5,6 +5,7 @@ class Animal
     protected $name = 'indéfinie';
     protected $race = 'indéfinie';
     protected $age = 0; // 0 egal age not uninformed or age < 1 like baby
+    protected $weight = 0;
 
     public function __construct()
     {

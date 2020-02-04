@@ -2,7 +2,7 @@
 
 class Dog extends Animal
 {
-    private $weight = 15;
+    protected $weight = 15;
     private const SPEEDING = 60;
 
     public function __construct()

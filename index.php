@@ -1,6 +1,7 @@
 <?php
 declare(strict_types=1);
 
+require_once 'Animal.php';
 require_once 'Cat.php';
 require_once 'Dog.php';
 
@@ -63,4 +64,3 @@ echo $ghost->introduce();
 // Create without parameters passed
 $invisible = new Cat();
 echo $invisible->introduce();
-

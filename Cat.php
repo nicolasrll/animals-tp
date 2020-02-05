@@ -40,4 +40,9 @@ class Cat extends Animal
 
         return $introduce;
     }
+
+    public function makeNoise()
+    {
+        return 'Le chat miaule';
+    }
 }

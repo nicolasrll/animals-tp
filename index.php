@@ -65,6 +65,5 @@ echo $ghost->introduce();
 $invisible = new Cat();
 echo $invisible->introduce();
 
-
 echo $garfield->makeNoise() . '<br>';
 echo $beethoven->makeNoise() . '<br>';

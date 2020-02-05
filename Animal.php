@@ -52,5 +52,5 @@ abstract class Animal
         $this->weight = $weight;
     }
 
-    abstract protected function makeNoise();
+    abstract public function makeNoise();
 }

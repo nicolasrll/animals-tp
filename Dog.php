@@ -40,4 +40,9 @@ class Dog extends Animal
 
         return $introduce;
     }
+
+    public function makeNoise()
+    {
+        return 'Le chien aboie';
+    }
 }

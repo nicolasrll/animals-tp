@@ -64,3 +64,6 @@ echo $ghost->introduce();
 // Create without parameters passed
 $invisible = new Cat();
 echo $invisible->introduce();
+
+echo $garfield->makeNoise() . '<br>';
+echo $beethoven->makeNoise() . '<br>';

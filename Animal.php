@@ -1,6 +1,6 @@
 <?php
 
-class Animal
+abstract class Animal
 {
     protected $name = 'indéfinie';
     protected $race = 'indéfinie';
@@ -51,4 +51,6 @@ class Animal
     {
         $this->weight = $weight;
     }
+
+    abstract public function makeNoise();
 }

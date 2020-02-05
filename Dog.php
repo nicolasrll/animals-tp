@@ -8,7 +8,7 @@ class Dog extends Animal
     public function __construct()
     {
         parent::__construct();
-        echo 'Il s\'agit d\'un ' . strtolower(get_class()) . '.<br>';
+        echo 'Les chiens sont les meilleurs amis de l\'homme.<br>';
     }
 
     public function getWeight(): ?int

@@ -2,8 +2,11 @@
 declare(strict_types=1);
 
 require_once 'Animal.php';
+require_once 'AquaticAnimal.php';
+require_once 'LandAnimal.php';
 require_once 'Cat.php';
 require_once 'Dog.php';
+require_once 'Fish.php';
 
 // Create with all informations
 $garfield = new Cat();
@@ -67,3 +70,13 @@ echo $invisible->introduce();
 
 echo $garfield->makeNoise() . '<br>';
 echo $beethoven->makeNoise() . '<br>';
+
+
+$nemo = new Fish();
+$nemo->setName('Nemo');
+$nemo->setRace('poisson-clown');
+echo $nemo->getName() . '<br>';
+echo $nemo->getRace() . '<br>';
+echo $nemo->swimming() . '<br>';
+echo $nemo->makeNoise() . '<br>';
+
